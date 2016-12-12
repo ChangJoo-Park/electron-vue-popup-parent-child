@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+  <h1 class="popup--header" id="">ABCD</h1>
+  <script type="text/javascript">
+    var urlParams = new URLSearchParams(window.location.search);
+    var chatId = urlParams.get('chatId')
+    console.log(chatId)
+    var header = document.querySelector('.popup--header')
+    header.innerHTML = chatId
+  </script>
+</body>
+</html>
